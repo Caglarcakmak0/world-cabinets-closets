@@ -328,4 +328,6 @@ textarea.form-field{min-height:120px;resize:vertical}
   .proj-grid>div{grid-column:span 1!important}
   .hero-actions{flex-direction:column;align-items:stretch}
   .hero-actions .btn{justify-content:center}
+  .pill-row{gap:1rem 1.2rem}
+  .pill{width:calc(50% - .6rem)}
 }
