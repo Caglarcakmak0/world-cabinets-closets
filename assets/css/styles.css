@@ -303,11 +303,11 @@ textarea.form-field{min-height:120px;resize:vertical}
   .nav.open .nav-links{display:flex;position:absolute;top:84px;left:0;right:0;flex-direction:column;
     align-items:flex-start;background:#fff;border-bottom:1px solid var(--line);padding:1rem 24px;gap:.2rem;box-shadow:var(--shadow)}
   .nav.open .nav-links a,.nav.open .dropdown-toggle{padding:.7rem 0;width:100%}
-  /* mobile submenu: collapsed by default, expands only when .has-dropdown.open */
+  /* mobile submenu: hidden by default, shown only when .has-dropdown.open (deterministic, no transition) */
   .nav.open .dropdown{position:static;transform:none;opacity:1;visibility:visible;box-shadow:none;border:0;
-    min-width:0;padding:0;max-height:0;overflow:hidden;transition:max-height .28s ease}
-  .nav.open .has-dropdown.open .dropdown{max-height:640px;padding:.2rem 0 .6rem 1rem}
-  .nav.open .dropdown-cols{grid-template-columns:1fr;min-width:0}
+    min-width:0;padding:0 0 .4rem 1rem;display:none}
+  .nav.open .has-dropdown.open .dropdown{display:block}
+  .nav.open .dropdown a{padding:.5rem 0}
   .nav{position:static}
   .card-grid-3,.cards-3{grid-template-columns:1fr}
   .cards-overlap{margin-top:-50px}
