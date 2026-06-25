@@ -297,13 +297,16 @@ textarea.form-field{min-height:120px;resize:vertical}
   .proj-grid .p1{grid-column:span 2;grid-row:span 2}
 }
 @media(max-width:860px){
-  .nav-links,.header-phone{display:none}
+  .nav-links,.header-phone,.header-actions{display:none}
   .nav-toggle{display:inline-flex}
+  .footer-grid{grid-template-columns:1fr 1fr}
   .nav.open .nav-links{display:flex;position:absolute;top:84px;left:0;right:0;flex-direction:column;
     align-items:flex-start;background:#fff;border-bottom:1px solid var(--line);padding:1rem 24px;gap:.2rem;box-shadow:var(--shadow)}
   .nav.open .nav-links a,.nav.open .dropdown-toggle{padding:.7rem 0;width:100%}
+  /* mobile submenu: collapsed by default, expands only when .has-dropdown.open */
   .nav.open .dropdown{position:static;transform:none;opacity:1;visibility:visible;box-shadow:none;border:0;
-    padding:0 0 .5rem 1rem;min-width:0}
+    min-width:0;padding:0;max-height:0;overflow:hidden;transition:max-height .28s ease}
+  .nav.open .has-dropdown.open .dropdown{max-height:640px;padding:.2rem 0 .6rem 1rem}
   .nav.open .dropdown-cols{grid-template-columns:1fr;min-width:0}
   .nav{position:static}
   .card-grid-3,.cards-3{grid-template-columns:1fr}
@@ -317,7 +320,8 @@ textarea.form-field{min-height:120px;resize:vertical}
 }
 @media(max-width:560px){
   .container{padding:0 18px}
-  .features-4,.gallery-4,.gallery-3,.proj-grid,.contact-info-bar{grid-template-columns:1fr}
+  .features-4,.gallery-4,.gallery-3,.proj-grid,.contact-info-bar,.footer-grid{grid-template-columns:1fr}
+  .footer-col{margin-bottom:.2rem}
   .steps{grid-template-columns:1fr}
   .proj-grid{grid-auto-rows:200px}
   .proj-grid .p1{grid-column:span 1;grid-row:span 1}
