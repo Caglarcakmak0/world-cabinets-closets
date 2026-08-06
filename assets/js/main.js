@@ -14,15 +14,7 @@ document.addEventListener('click', function (e) {
   }
 });
 
-// contact form — no backend; graceful confirmation
-document.addEventListener('submit', function (e) {
-  var form = e.target.closest('#contact-form');
-  if (!form) return;
-  e.preventDefault();
-  var btn = form.querySelector('[type=submit]');
-  if (btn) { btn.textContent = 'Thank you — we’ll be in touch!'; btn.disabled = true; }
-  form.reset();
-});
+// contact form submission is handled inline on contact.html (mailto hand-off)
 
 // current year in footer
 document.querySelectorAll('[data-year]').forEach(function (el) {

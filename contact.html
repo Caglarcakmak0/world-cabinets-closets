@@ -4,11 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact Us | World Cabinets &amp; Closets</title>
-<meta name="description" content="Get in touch with World Cabinets & Closets. Book a free consultation for your kitchen, bathroom, or closet remodeling project in the GTA.">
+<meta name="description" content="Get in touch with World Cabinets & Closets. Book a free consultation for your kitchen, bathroom, or closet remodeling project in Fairfax, Virginia.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css">
+<style>
+  .showroom-title { font-size: clamp(2.2rem, 4.5vw, 3.4rem); line-height: 1.15; }
+  .showroom-title a { color: inherit; text-decoration: none; cursor: pointer; transition: color .2s ease; }
+  .showroom-title a:hover,
+  .showroom-title a:focus-visible { color: var(--orange); text-decoration: underline; text-underline-offset: .12em; }
+  .form-note { margin-top: .75rem; font-size: .85rem; opacity: .75; }
+  /* CT3: gallery removed, so the section no longer needs trailing space */
+  .showroom-head { margin-bottom: 0; }
+  .showroom-addr { margin-bottom: 0; font-weight: 600; color: var(--ink); }
+  .showroom-dir { color: var(--orange); margin-left: .5rem; white-space: nowrap; }
+</style>
 <link rel="icon" href="assets/img/logo.png">
 </head>
 <body>
@@ -85,14 +96,14 @@
       <div class="ci">
         <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></div>
         <h3>Email Us</h3>
-        <p>info@worldcabinets.ca</p>
+        <p>info@worldcabinetsandclosets.com</p>
         <p>We'll respond within 24 hours.</p>
       </div>
       <div class="ci">
         <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
         <h3>Visit Us</h3>
-        <p>123 Design Drive, Unit 5</p>
-        <p>Vaughan, ON L4K 2N1</p>
+        <p>11202-A Lee Highway</p>
+        <p>Fairfax, Virginia 22030</p>
         <p>By appointment only</p>
       </div>
       <div class="ci">
@@ -121,22 +132,30 @@
           <label>
             <select class="form-field" name="project-type">
               <option value="">Project Type</option>
-              <option value="kitchen">Kitchen Remodeling</option>
-              <option value="bathroom">Bathroom Remodeling</option>
-              <option value="closet">Closet &amp; Storage</option>
-              <option value="whole-home">Whole Home</option>
+              <option value="kitchen-remodeling">Kitchen Remodeling</option>
+              <option value="bathroom-remodeling">Bathroom Remodeling</option>
+              <option value="walk-in-closet">Walk-in Closet</option>
+              <option value="reach-in-closet">Reach-in Closet</option>
+              <option value="pantry">Pantry</option>
+              <option value="laundry-room">Laundry Room</option>
+              <option value="home-office">Home Office</option>
+              <option value="mudroom">Mudroom</option>
+              <option value="library">Library</option>
+              <option value="tv-center">TV Center</option>
+              <option value="kids-closet">Kids' Closet</option>
               <option value="other">Other</option>
             </select>
           </label>
           <label><textarea class="form-field" name="message" placeholder="Message*" required></textarea></label>
           <button type="submit" class="btn btn-primary">Send Message <span class="arrow">→</span></button>
+          <p class="form-note">Your email client will open with your message ready to send.</p>
         </form>
       </div>
       <div class="split-body">
         <h2>Our Location</h2>
         <hr class="divider">
         <div class="map-card">
-          <iframe src="https://www.google.com/maps?q=123+Design+Drive,+Vaughan,+ON+L4K+2N1&output=embed" loading="lazy"></iframe>
+          <iframe src="https://www.google.com/maps?q=11202-A+Lee+Highway,+Fairfax,+VA+22030&output=embed" loading="lazy"></iframe>
           <div class="map-note">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l1.5-4.5A2 2 0 0 1 8.4 7h7.2a2 2 0 0 1 1.9 1.5L19 13"/><path d="M3 13h18v5H3z"/><circle cx="7.5" cy="18" r="1.5"/><circle cx="16.5" cy="18" r="1.5"/></svg>
             <span><strong>Easy Parking Available</strong>Free parking available right in front of our showroom.</span>
@@ -150,23 +169,10 @@
 <!-- VISIT OUR SHOWROOM -->
 <section class="bg-white pad">
   <div class="container">
-    <div class="section-head">
-      <h2>Visit Our Showroom</h2>
+    <div class="section-head showroom-head">
+      <h2 class="showroom-title"><a href="https://www.google.com/maps/dir/?api=1&amp;destination=11202-A+Lee+Highway,+Fairfax,+VA+22030" target="_blank" rel="noopener">Visit Our Showroom</a></h2>
       <p>Experience our quality craftsmanship up close. Explore our displays and find inspiration for your next project.</p>
-    </div>
-    <div class="gallery gallery-3">
-      <div class="g-item">
-        <img src="assets/img/contact/02.jpg" alt="Kitchen displays in our showroom">
-        <span class="g-cap"><h4>Kitchen Displays</h4><p>See our custom cabinetry and finishes.</p></span>
-      </div>
-      <div class="g-item">
-        <img src="assets/img/contact/03.jpg" alt="Closet storage solutions">
-        <span class="g-cap"><h4>Closet Solutions</h4><p>Explore functional and stylish storage.</p></span>
-      </div>
-      <div class="g-item">
-        <img src="assets/img/contact/04.jpg" alt="Bathroom vanity display">
-        <span class="g-cap"><h4>Bathroom Vanities</h4><p>Discover elegant designs and materials.</p></span>
-      </div>
+      <p class="showroom-addr">11202-A Lee Highway, Fairfax, Virginia 22030 <span class="showroom-dir">Get Directions <span class="arrow">&rarr;</span></span></p>
     </div>
   </div>
 </section>
@@ -194,10 +200,11 @@
         <img src="assets/img/logo.png" alt="World Cabinets &amp; Closets">
         <p>Expert kitchen, bathroom, closet and whole-home remodeling crafted around your lifestyle.</p>
         <div class="socials">
-          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.5 9.9v-7H7.9V12h2.6V9.8c0-2.6 1.5-4 3.9-4 1.1 0 2.3.2 2.3.2v2.5h-1.3c-1.3 0-1.7.8-1.7 1.6V12h2.9l-.5 2.9h-2.4v7A10 10 0 0 0 22 12z"/></svg></a>
-          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
-          <a href="#" aria-label="Pinterest"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.6 19.3c-.1-.8-.2-2 0-2.9l1.2-5s-.3-.6-.3-1.5c0-1.4.8-2.4 1.8-2.4.9 0 1.3.6 1.3 1.4 0 .9-.5 2.2-.8 3.4-.2 1 .5 1.8 1.5 1.8 1.8 0 3-2.3 3-5 0-2-1.4-3.6-4-3.6-2.9 0-4.7 2.2-4.7 4.6 0 .8.2 1.4.6 1.9.2.2.2.3.1.5l-.2.9c-.1.3-.3.4-.6.2-1.2-.5-1.7-1.8-1.7-3.3 0-2.5 2.1-5.4 6.2-5.4 3.3 0 5.5 2.4 5.5 5 0 3.4-1.9 5.9-4.6 5.9-.9 0-1.8-.5-2.1-1.1l-.6 2.2c-.2.8-.6 1.5-1 2.1A10 10 0 1 0 12 2z"/></svg></a>
-          <a href="#" aria-label="Houzz"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 5 6v6l7-4 7 4V6z" opacity=".55"/><path d="M5 12v10h5v-6h4v6h5V12l-7-4z"/></svg></a>
+          <a href="https://www.facebook.com/worldcabinets1" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.5 9.9v-7H7.9V12h2.6V9.8c0-2.6 1.5-4 3.9-4 1.1 0 2.3.2 2.3.2v2.5h-1.3c-1.3 0-1.7.8-1.7 1.6V12h2.9l-.5 2.9h-2.4v7A10 10 0 0 0 22 12z"/></svg></a>
+          <a href="https://www.instagram.com/worldcabinetsandclosets" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://www.tiktok.com/@world.cabinets.an" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.9 2h2.7c.2 1.7 1.2 3.1 3.1 3.3v2.7c-1.2 0-2.3-.3-3.2-.9v6.7a5.5 5.5 0 1 1-5.5-5.5c.3 0 .6 0 .9.1v2.8a2.7 2.7 0 1 0 2 2.6V2z"/></svg></a>
+          <a href="https://www.youtube.com/channel/UCfHDie9PL10sFqHPHX2N8YA" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 12s0-3.2-.4-4.7a2.5 2.5 0 0 0-1.7-1.8C19.2 5 12 5 12 5s-7.2 0-8.9.5a2.5 2.5 0 0 0-1.7 1.8C1 8.8 1 12 1 12s0 3.2.4 4.7a2.5 2.5 0 0 0 1.7 1.8c1.7.5 8.9.5 8.9.5s7.2 0 8.9-.5a2.5 2.5 0 0 0 1.7-1.8C23 15.2 23 12 23 12zM9.8 15.3V8.7l6.1 3.3-6.1 3.3z"/></svg></a>
+          <a href="https://pin.it/4yomljuiO" target="_blank" rel="noopener" aria-label="Pinterest"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.6 19.3c-.1-.8-.2-2 0-2.9l1.2-5s-.3-.6-.3-1.5c0-1.4.8-2.4 1.8-2.4.9 0 1.3.6 1.3 1.4 0 .9-.5 2.2-.8 3.4-.2 1 .5 1.8 1.5 1.8 1.8 0 3-2.3 3-5 0-2-1.4-3.6-4-3.6-2.9 0-4.7 2.2-4.7 4.6 0 .8.2 1.4.6 1.9.2.2.2.3.1.5l-.2.9c-.1.3-.3.4-.6.2-1.2-.5-1.7-1.8-1.7-3.3 0-2.5 2.1-5.4 6.2-5.4 3.3 0 5.5 2.4 5.5 5 0 3.4-1.9 5.9-4.6 5.9-.9 0-1.8-.5-2.1-1.1l-.6 2.2c-.2.8-.6 1.5-1 2.1A10 10 0 1 0 12 2z"/></svg></a>
         </div>
       </div>
       <div class="footer-col">
@@ -212,28 +219,18 @@
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Services</h4>
-        <ul>
-          <li><a href="kitchen.html">Kitchen Remodeling</a></li>
-          <li><a href="bathroom.html">Bathroom Remodeling</a></li>
-          <li><a href="walk-in-closet.html">Closet &amp; Storage</a></li>
-          <li><a href="laundry-room.html">Laundry Rooms</a></li>
-          <li><a href="home-office.html">Home Office</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
         <h4>Contact</h4>
         <ul>
           <li><a href="tel:+16471234567">(647) 123-4567</a></li>
-          <li><a href="mailto:info@worldcabinets.ca">info@worldcabinets.ca</a></li>
-          <li>123 Design Drive, Unit 5<br>Vaughan, ON L4K 2N1</li>
+          <li><a href="mailto:info@worldcabinetsandclosets.com">info@worldcabinetsandclosets.com</a></li>
+          <li>11202-A Lee Highway<br>Fairfax, Virginia 22030</li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Business Hours</h4>
         <ul>
-          <li>Mon – Fri: 9:00 AM – 6:00 PM</li>
-          <li>Sat: 10:00 AM – 4:00 PM</li>
+          <li>Mon - Fri: 9:00 AM - 6:00 PM</li>
+          <li>Sat: 10:00 AM - 4:00 PM</li>
           <li>Sun: Closed</li>
         </ul>
       </div>
@@ -243,5 +240,45 @@
 </footer>
 
 <script src="assets/js/main.js"></script>
+<script>
+(function () {
+  var form = document.getElementById('contact-form');
+  if (!form) return;
+
+  var TO = 'info@worldcabinetsandclosets.com';
+  var CC = 'info@worldclosets.us';
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    var get = function (name) {
+      var el = form.elements[name];
+      return el && el.value ? el.value.trim() : '';
+    };
+
+    var typeField = form.elements['project-type'];
+    var typeLabel = '';
+    if (typeField && typeField.selectedIndex > 0) {
+      typeLabel = typeField.options[typeField.selectedIndex].text;
+    }
+
+    var subject = 'New website enquiry - ' + (typeLabel || 'General');
+    var body = [
+      'Name: ' + get('name'),
+      'Email: ' + get('email'),
+      'Phone: ' + (get('phone') || '-'),
+      'Project Type: ' + (typeLabel || '-'),
+      '',
+      'Message:',
+      get('message')
+    ].join('\n');
+
+    window.location.href = 'mailto:' + TO +
+      '?cc=' + CC +
+      '&subject=' + encodeURIComponent(subject) +
+      '&body=' + encodeURIComponent(body);
+  });
+})();
+</script>
 </body>
 </html>
