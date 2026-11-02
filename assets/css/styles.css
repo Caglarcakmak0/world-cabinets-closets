@@ -70,8 +70,8 @@ section{position:relative}
 .section-head{text-align:center;max-width:720px;margin:0 auto 3rem}
 .section-head p{color:var(--body)}
 .divider{width:54px;height:3px;background:var(--orange);border:0;margin:0 0 1.4rem}
-/* Serif ampersand matches the supplied heading references. */
-.amp{font-family:var(--serif);font-weight:600}
+/* Keep the original upright ampersand per the latest client request. */
+.amp{font-family:var(--sans);font-weight:600}
 .section-head .divider{margin-left:auto;margin-right:auto}
 
 /* ============================================================
@@ -133,7 +133,7 @@ section{position:relative}
 .svc-card{background:#fff;border:1px solid var(--line-2);border-radius:8px;overflow:hidden;
   box-shadow:var(--shadow);transition:.25s ease}
 .svc-card:hover{transform:translateY(-6px)}
-.svc-card .img{aspect-ratio:16/10;overflow:hidden}
+.svc-card .img{display:block;aspect-ratio:2/3;overflow:hidden}
 .svc-card .img img{width:100%;height:100%;object-fit:cover;transition:.4s ease}
 .svc-card:hover .img img{transform:scale(1.05)}
 .svc-card .body{padding:1.6rem 1.6rem 1.8rem}
