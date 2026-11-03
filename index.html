@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/styles.css?v=d9b62a22b3">
+<link rel="stylesheet" href="assets/css/styles.css?v=0d1112f0ca">
 <style>
   /* H4: plain upright ampersand instead of the Playfair swash glyph */
   .amp{font-family:var(--sans);font-weight:600}
@@ -191,24 +191,500 @@
 </section>
 
 <!-- PROJECT VIDEOS -->
-<section class="bg-white pad" id="project-videos">
+<section class="bg-white pad" id="project-videos" aria-labelledby="video-heading">
   <div class="container">
-    <div class="section-head"><h2>Our Projects and Client Expreiences</h2></div>
-    <div class="video-grid">
-      <article>
-        <iframe class="project-video" src="https://www.youtube-nocookie.com/embed/_WLyNl9YUOM" title="Kitchen Project, Ashburn VA" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <h3>Kitchen Remodeling</h3>
+    <div class="section-head"><h2 id="video-heading">Our Projects and Client Expreiences</h2></div>
+    <div class="video-controls">
+      <p>Explore our videos and Shorts. Swipe or use the arrows to see more.</p>
+      <div>
+        <button class="btn btn-ghost" type="button" data-video-direction="-1" aria-label="Previous videos" aria-controls="video-track">←</button>
+        <button class="btn btn-ghost" type="button" data-video-direction="1" aria-label="Next videos" aria-controls="video-track">→</button>
+      </div>
+    </div>
+    <div class="video-grid" id="video-track" tabindex="0" role="region" aria-label="Project videos and Shorts">
+      <article class="video-card">
+        <div class="video-preview">
+          <button class="video-play" type="button" data-video="_WLyNl9YUOM" aria-label="Play Kitchen Project ,Ashburn VA">
+            <img src="https://i.ytimg.com/vi/_WLyNl9YUOM/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </button>
+        </div>
+        <p class="eyebrow">Video</p>
+        <h3>Kitchen Project ,Ashburn VA</h3>
         <a href="https://www.youtube.com/watch?v=_WLyNl9YUOM" target="_blank" rel="noopener">Watch on YouTube</a>
       </article>
-      <article>
-        <iframe class="project-video short-video" src="https://www.youtube-nocookie.com/embed/oSyimM2_sMI" title="Your project is personal to us — World Cabinets and Closets" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <h3>Your Project Is Personal to Us</h3>
-        <a href="https://www.youtube.com/shorts/oSyimM2_sMI" target="_blank" rel="noopener">Watch Short on YouTube</a>
+      <article class="video-card">
+        <div class="video-preview">
+          <button class="video-play" type="button" data-video="B3e8jTCgh0M" aria-label="Play New Kitchen Renovation Mclean VA  World cabinets and closets">
+            <img src="https://i.ytimg.com/vi/B3e8jTCgh0M/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </button>
+        </div>
+        <p class="eyebrow">Video</p>
+        <h3>New Kitchen Renovation Mclean VA  World cabinets and closets</h3>
+        <a href="https://www.youtube.com/watch?v=B3e8jTCgh0M" target="_blank" rel="noopener">Watch on YouTube</a>
       </article>
-      <article>
-        <iframe class="project-video short-video" src="https://www.youtube-nocookie.com/embed/k8WaMeN-XKs" title="Bathroom Renovation — World Cabinets and Closets" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <article class="video-card">
+        <div class="video-preview">
+          <button class="video-play" type="button" data-video="BBJN876nlLE" aria-label="Play Kitchen Renovation Project!">
+            <img src="https://i.ytimg.com/vi/BBJN876nlLE/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </button>
+        </div>
+        <p class="eyebrow">Video</p>
+        <h3>Kitchen Renovation Project!</h3>
+        <a href="https://www.youtube.com/watch?v=BBJN876nlLE" target="_blank" rel="noopener">Watch on YouTube</a>
+      </article>
+      <article class="video-card">
+        <div class="video-preview">
+          <button class="video-play" type="button" data-video="7C7-E1QgYYw" aria-label="Play Luxury Built-in Custom Closet">
+            <img src="https://i.ytimg.com/vi/7C7-E1QgYYw/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </button>
+        </div>
+        <p class="eyebrow">Video</p>
+        <h3>Luxury Built-in Custom Closet</h3>
+        <a href="https://www.youtube.com/watch?v=7C7-E1QgYYw" target="_blank" rel="noopener">Watch on YouTube</a>
+      </article>
+      <article class="video-card">
+        <div class="video-preview">
+          <button class="video-play" type="button" data-video="G-U4Lt70-H4" aria-label="Play Custom Walk-in  Closet.">
+            <img src="https://i.ytimg.com/vi/G-U4Lt70-H4/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </button>
+        </div>
+        <p class="eyebrow">Video</p>
+        <h3>Custom Walk-in  Closet.</h3>
+        <a href="https://www.youtube.com/watch?v=G-U4Lt70-H4" target="_blank" rel="noopener">Watch on YouTube</a>
+      </article>
+      <article class="video-card">
+        <div class="video-preview">
+          <button class="video-play" type="button" data-video="oSyimM2_sMI" aria-label="Play At World Cabinets &amp; Closets, your project is personal to us.">
+            <img src="https://i.ytimg.com/vi/oSyimM2_sMI/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </button>
+        </div>
+        <p class="eyebrow">Short</p>
+        <h3>At World Cabinets &amp; Closets, your project is personal to us.</h3>
+        <a href="https://www.youtube.com/shorts/oSyimM2_sMI" target="_blank" rel="noopener">Watch on YouTube</a>
+      </article>
+      <article class="video-card">
+        <div class="video-preview">
+          <button class="video-play" type="button" data-video="cJ8oc178YDU" aria-label="Play A beautiful Library Room, thoughtful little details, and a story we’re so happy to be part of. 💙">
+            <img src="https://i.ytimg.com/vi/cJ8oc178YDU/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </button>
+        </div>
+        <p class="eyebrow">Short</p>
+        <h3>A beautiful Library Room, thoughtful little details, and a story we’re so happy to be part of. 💙</h3>
+        <a href="https://www.youtube.com/shorts/cJ8oc178YDU" target="_blank" rel="noopener">Watch on YouTube</a>
+      </article>
+      <article class="video-card">
+        <div class="video-preview">
+          <button class="video-play" type="button" data-video="aEt2aNGRsbY" aria-label="Play Tv center">
+            <img src="https://i.ytimg.com/vi/aEt2aNGRsbY/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </button>
+        </div>
+        <p class="eyebrow">Short</p>
+        <h3>Tv center</h3>
+        <a href="https://www.youtube.com/shorts/aEt2aNGRsbY" target="_blank" rel="noopener">Watch on YouTube</a>
+      </article>
+      <article class="video-card">
+        <div class="video-preview">
+          <button class="video-play" type="button" data-video="gT6cojokhhU" aria-label="Play Custom Walk-in Closets.">
+            <img src="https://i.ytimg.com/vi/gT6cojokhhU/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </button>
+        </div>
+        <p class="eyebrow">Short</p>
+        <h3>Custom Walk-in Closets.</h3>
+        <a href="https://www.youtube.com/shorts/gT6cojokhhU" target="_blank" rel="noopener">Watch on YouTube</a>
+      </article>
+      <article class="video-card">
+        <div class="video-preview">
+          <button class="video-play" type="button" data-video="PQZIQIpPOcE" aria-label="Play Custom TV center wall.#worldcabinetsandclosets #tvcenter #customcabinets #interiordesign #homedesign">
+            <img src="https://i.ytimg.com/vi/PQZIQIpPOcE/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </button>
+        </div>
+        <p class="eyebrow">Short</p>
+        <h3>Custom TV center wall.#worldcabinetsandclosets #tvcenter #customcabinets #interiordesign #homedesign</h3>
+        <a href="https://www.youtube.com/shorts/PQZIQIpPOcE" target="_blank" rel="noopener">Watch on YouTube</a>
+      </article>
+      <article class="video-card">
+        <div class="video-preview">
+          <button class="video-play" type="button" data-video="k8WaMeN-XKs" aria-label="Play Bathroom Renovation. #bathroomdecor #bathroominspo  #bathroomremodel">
+            <img src="https://i.ytimg.com/vi/k8WaMeN-XKs/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </button>
+        </div>
+        <p class="eyebrow">Short</p>
+        <h3>Bathroom Renovation. #bathroomdecor #bathroominspo  #bathroomremodel</h3>
+        <a href="https://www.youtube.com/shorts/k8WaMeN-XKs" target="_blank" rel="noopener">Watch on YouTube</a>
+      </article>
+      <article class="video-card">
+        <div class="video-preview">
+          <button class="video-play" type="button" data-video="X4uz8x_-9C8" aria-label="Play Bathroom Renovation">
+            <img src="https://i.ytimg.com/vi/X4uz8x_-9C8/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </button>
+        </div>
+        <p class="eyebrow">Short</p>
         <h3>Bathroom Renovation</h3>
-        <a href="https://www.youtube.com/shorts/k8WaMeN-XKs" target="_blank" rel="noopener">Watch Short on YouTube</a>
+        <a href="https://www.youtube.com/shorts/X4uz8x_-9C8" target="_blank" rel="noopener">Watch on YouTube</a>
+      </article>
+      <article class="video-card">
+        <div class="video-preview">
+          <button class="video-play" type="button" data-video="OAeiWU3zRyw" aria-label="Play More space, more style. Need a Custom Closet? Reach out to our team. #closet #design">
+            <img src="https://i.ytimg.com/vi/OAeiWU3zRyw/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </button>
+        </div>
+        <p class="eyebrow">Short</p>
+        <h3>More space, more style. Need a Custom Closet? Reach out to our team. #closet #design</h3>
+        <a href="https://www.youtube.com/shorts/OAeiWU3zRyw" target="_blank" rel="noopener">Watch on YouTube</a>
+      </article>
+      <article class="video-card">
+        <div class="video-preview">
+          <button class="video-play" type="button" data-video="sAAtFFt1njY" aria-label="Play We love getting involved to help bring ideas, expertise, and product samples to the table🌸 #kitchen">
+            <img src="https://i.ytimg.com/vi/sAAtFFt1njY/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </button>
+        </div>
+        <p class="eyebrow">Short</p>
+        <h3>We love getting involved to help bring ideas, expertise, and product samples to the table🌸 #kitchen</h3>
+        <a href="https://www.youtube.com/shorts/sAAtFFt1njY" target="_blank" rel="noopener">Watch on YouTube</a>
+      </article>
+      <article class="video-card">
+        <div class="video-preview">
+          <button class="video-play" type="button" data-video="3Du0Fgtqu-k" aria-label="Play April 29, 2026">
+            <img src="https://i.ytimg.com/vi/3Du0Fgtqu-k/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </button>
+        </div>
+        <p class="eyebrow">Short</p>
+        <h3>April 29, 2026</h3>
+        <a href="https://www.youtube.com/shorts/3Du0Fgtqu-k" target="_blank" rel="noopener">Watch on YouTube</a>
+      </article>
+      <article class="video-card">
+        <div class="video-preview">
+          <button class="video-play" type="button" data-video="2UkmV3AXPtM" aria-label="Play Angled Wall Walk-in Closets build.#worldcabinetsandclosets #closet #walkincloset #luxury #reno">
+            <img src="https://i.ytimg.com/vi/2UkmV3AXPtM/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </button>
+        </div>
+        <p class="eyebrow">Short</p>
+        <h3>Angled Wall Walk-in Closets build.#worldcabinetsandclosets #closet #walkincloset #luxury #reno</h3>
+        <a href="https://www.youtube.com/shorts/2UkmV3AXPtM" target="_blank" rel="noopener">Watch on YouTube</a>
+      </article>
+      <article class="video-card">
+        <div class="video-preview">
+          <button class="video-play" type="button" data-video="ZPaPx45-PQg" aria-label="Play Bathroom Renovation! #bathroomdesign #kitchen #bathroom-decor#bathroom installation">
+            <img src="https://i.ytimg.com/vi/ZPaPx45-PQg/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </button>
+        </div>
+        <p class="eyebrow">Short</p>
+        <h3>Bathroom Renovation! #bathroomdesign #kitchen #bathroom-decor#bathroom installation</h3>
+        <a href="https://www.youtube.com/shorts/ZPaPx45-PQg" target="_blank" rel="noopener">Watch on YouTube</a>
+      </article>
+      <article class="video-card">
+        <div class="video-preview">
+          <button class="video-play" type="button" data-video="845GzUriQrg" aria-label="Play &quot;Looking to renovate your kitchens? Contact us! Get in touch for more details.&quot; #kitchen#renovation">
+            <img src="https://i.ytimg.com/vi/845GzUriQrg/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </button>
+        </div>
+        <p class="eyebrow">Short</p>
+        <h3>&quot;Looking to renovate your kitchens? Contact us! Get in touch for more details.&quot; #kitchen#renovation</h3>
+        <a href="https://www.youtube.com/shorts/845GzUriQrg" target="_blank" rel="noopener">Watch on YouTube</a>
+      </article>
+      <article class="video-card">
+        <div class="video-preview">
+          <button class="video-play" type="button" data-video="86HrFR_pBdw" aria-label="Play Pooja room decor #poojaroomdecor#worldcabinetsandclosets#prayeroom#prayer #pooja#poojaroomdecor">
+            <img src="https://i.ytimg.com/vi/86HrFR_pBdw/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </button>
+        </div>
+        <p class="eyebrow">Short</p>
+        <h3>Pooja room decor #poojaroomdecor#worldcabinetsandclosets#prayeroom#prayer #pooja#poojaroomdecor</h3>
+        <a href="https://www.youtube.com/shorts/86HrFR_pBdw" target="_blank" rel="noopener">Watch on YouTube</a>
+      </article>
+      <article class="video-card">
+        <div class="video-preview">
+          <button class="video-play" type="button" data-video="2I9hjbvNNjs" aria-label="Play Kitchen renovation 🏡. #kitchendesignideas #kitchen #kitchendecor #worldcabinetsandclosets">
+            <img src="https://i.ytimg.com/vi/2I9hjbvNNjs/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </button>
+        </div>
+        <p class="eyebrow">Short</p>
+        <h3>Kitchen renovation 🏡. #kitchendesignideas #kitchen #kitchendecor #worldcabinetsandclosets</h3>
+        <a href="https://www.youtube.com/shorts/2I9hjbvNNjs" target="_blank" rel="noopener">Watch on YouTube</a>
+      </article>
+      <article class="video-card">
+        <div class="video-preview">
+          <button class="video-play" type="button" data-video="07PRm9B7r04" aria-label="Play “Another walk-in closets project completed by World Closet.✅#closet#closetorganization">
+            <img src="https://i.ytimg.com/vi/07PRm9B7r04/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </button>
+        </div>
+        <p class="eyebrow">Short</p>
+        <h3>“Another walk-in closets project completed by World Closet.✅#closet#closetorganization</h3>
+        <a href="https://www.youtube.com/shorts/07PRm9B7r04" target="_blank" rel="noopener">Watch on YouTube</a>
+      </article>
+      <article class="video-card">
+        <div class="video-preview">
+          <button class="video-play" type="button" data-video="5HiPgdld948" aria-label="Play Custom walk-in Closets. #closet #reflectyourstyle#walkincloset#closet#world#worldcabinetsandclosets">
+            <img src="https://i.ytimg.com/vi/5HiPgdld948/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </button>
+        </div>
+        <p class="eyebrow">Short</p>
+        <h3>Custom walk-in Closets. #closet #reflectyourstyle#walkincloset#closet#world#worldcabinetsandclosets</h3>
+        <a href="https://www.youtube.com/shorts/5HiPgdld948" target="_blank" rel="noopener">Watch on YouTube</a>
+      </article>
+      <article class="video-card">
+        <div class="video-preview">
+          <button class="video-play" type="button" data-video="96lg_uYufJg" aria-label="Play Laundry Room  🧺 We’ve recently renovated another laundry room for our client 💕#closet #laundry">
+            <img src="https://i.ytimg.com/vi/96lg_uYufJg/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </button>
+        </div>
+        <p class="eyebrow">Short</p>
+        <h3>Laundry Room  🧺 We’ve recently renovated another laundry room for our client 💕#closet #laundry</h3>
+        <a href="https://www.youtube.com/shorts/96lg_uYufJg" target="_blank" rel="noopener">Watch on YouTube</a>
+      </article>
+      <article class="video-card">
+        <div class="video-preview">
+          <button class="video-play" type="button" data-video="3hwklZDPYwQ" aria-label="Play Built your dream pantry ❤️Designed by @worldcabinetsandclosets ⭐️#pantry#pantryorganization">
+            <img src="https://i.ytimg.com/vi/3hwklZDPYwQ/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </button>
+        </div>
+        <p class="eyebrow">Short</p>
+        <h3>Built your dream pantry ❤️Designed by @worldcabinetsandclosets ⭐️#pantry#pantryorganization</h3>
+        <a href="https://www.youtube.com/shorts/3hwklZDPYwQ" target="_blank" rel="noopener">Watch on YouTube</a>
+      </article>
+      <article class="video-card">
+        <div class="video-preview">
+          <button class="video-play" type="button" data-video="wTOXZE7zDks" aria-label="Play Custom Closet done by @worldcabinetsandclosets ✅ #walkincloset#closet#closet-organization">
+            <img src="https://i.ytimg.com/vi/wTOXZE7zDks/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </button>
+        </div>
+        <p class="eyebrow">Short</p>
+        <h3>Custom Closet done by @worldcabinetsandclosets ✅ #walkincloset#closet#closet-organization</h3>
+        <a href="https://www.youtube.com/shorts/wTOXZE7zDks" target="_blank" rel="noopener">Watch on YouTube</a>
+      </article>
+      <article class="video-card">
+        <div class="video-preview">
+          <button class="video-play" type="button" data-video="HCSnpIgYe1c" aria-label="Play Custom walk-in closets are the perfect solution to meet your storage needs. #closet #dreamcloset">
+            <img src="https://i.ytimg.com/vi/HCSnpIgYe1c/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </button>
+        </div>
+        <p class="eyebrow">Short</p>
+        <h3>Custom walk-in closets are the perfect solution to meet your storage needs. #closet #dreamcloset</h3>
+        <a href="https://www.youtube.com/shorts/HCSnpIgYe1c" target="_blank" rel="noopener">Watch on YouTube</a>
+      </article>
+      <article class="video-card">
+        <div class="video-preview">
+          <button class="video-play" type="button" data-video="8Qg7N7ZGgWI" aria-label="Play With Custom Closet Let’s save your time by making the daily selection process easier and beautiful!">
+            <img src="https://i.ytimg.com/vi/8Qg7N7ZGgWI/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </button>
+        </div>
+        <p class="eyebrow">Short</p>
+        <h3>With Custom Closet Let’s save your time by making the daily selection process easier and beautiful!</h3>
+        <a href="https://www.youtube.com/shorts/8Qg7N7ZGgWI" target="_blank" rel="noopener">Watch on YouTube</a>
+      </article>
+      <article class="video-card">
+        <div class="video-preview">
+          <button class="video-play" type="button" data-video="oGczJ8XAKB4" aria-label="Play September 28, 2023">
+            <img src="https://i.ytimg.com/vi/oGczJ8XAKB4/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </button>
+        </div>
+        <p class="eyebrow">Short</p>
+        <h3>September 28, 2023</h3>
+        <a href="https://www.youtube.com/shorts/oGczJ8XAKB4" target="_blank" rel="noopener">Watch on YouTube</a>
+      </article>
+      <article class="video-card">
+        <div class="video-preview">
+          <button class="video-play" type="button" data-video="37zOS86HI24" aria-label="Play Accessories trays #closet #fashion #luxurycloset #luxury #walkincloset">
+            <img src="https://i.ytimg.com/vi/37zOS86HI24/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </button>
+        </div>
+        <p class="eyebrow">Short</p>
+        <h3>Accessories trays #closet #fashion #luxurycloset #luxury #walkincloset</h3>
+        <a href="https://www.youtube.com/shorts/37zOS86HI24" target="_blank" rel="noopener">Watch on YouTube</a>
+      </article>
+      <article class="video-card">
+        <div class="video-preview">
+          <button class="video-play" type="button" data-video="H_L_KIvRleM" aria-label="Play Custom walk-in closet . #closet #luxurycloset #luxury #fashion #3d">
+            <img src="https://i.ytimg.com/vi/H_L_KIvRleM/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </button>
+        </div>
+        <p class="eyebrow">Short</p>
+        <h3>Custom walk-in closet . #closet #luxurycloset #luxury #fashion #3d</h3>
+        <a href="https://www.youtube.com/shorts/H_L_KIvRleM" target="_blank" rel="noopener">Watch on YouTube</a>
+      </article>
+      <article class="video-card">
+        <div class="video-preview">
+          <button class="video-play" type="button" data-video="O3iuiuWZgSg" aria-label="Play October 23, 2023">
+            <img src="https://i.ytimg.com/vi/O3iuiuWZgSg/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </button>
+        </div>
+        <p class="eyebrow">Short</p>
+        <h3>October 23, 2023</h3>
+        <a href="https://www.youtube.com/shorts/O3iuiuWZgSg" target="_blank" rel="noopener">Watch on YouTube</a>
+      </article>
+      <article class="video-card">
+        <div class="video-preview">
+          <button class="video-play" type="button" data-video="xFAJbt8yC5I" aria-label="Play Custom closet!">
+            <img src="https://i.ytimg.com/vi/xFAJbt8yC5I/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </button>
+        </div>
+        <p class="eyebrow">Short</p>
+        <h3>Custom closet!</h3>
+        <a href="https://www.youtube.com/shorts/xFAJbt8yC5I" target="_blank" rel="noopener">Watch on YouTube</a>
+      </article>
+      <article class="video-card">
+        <div class="video-preview">
+          <button class="video-play" type="button" data-video="hDStWK7_svo" aria-label="Play Time to get organize your closet 🌷New project is done by love ✅ #closet ##interior #luxurycloset">
+            <img src="https://i.ytimg.com/vi/hDStWK7_svo/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </button>
+        </div>
+        <p class="eyebrow">Short</p>
+        <h3>Time to get organize your closet 🌷New project is done by love ✅ #closet ##interior #luxurycloset</h3>
+        <a href="https://www.youtube.com/shorts/hDStWK7_svo" target="_blank" rel="noopener">Watch on YouTube</a>
+      </article>
+      <article class="video-card">
+        <div class="video-preview">
+          <button class="video-play" type="button" data-video="8qBAPTd1B2U" aria-label="Play Custom luxury Dream Closet design 💕 #closet #fashion #luxurycloset #luxury #channel">
+            <img src="https://i.ytimg.com/vi/8qBAPTd1B2U/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </button>
+        </div>
+        <p class="eyebrow">Short</p>
+        <h3>Custom luxury Dream Closet design 💕 #closet #fashion #luxurycloset #luxury #channel</h3>
+        <a href="https://www.youtube.com/shorts/8qBAPTd1B2U" target="_blank" rel="noopener">Watch on YouTube</a>
+      </article>
+      <article class="video-card">
+        <div class="video-preview">
+          <button class="video-play" type="button" data-video="UlBvEaHwC1w" aria-label="Play World Cabinets and Closets🌎 #closet #fashion #luxurycloset #luxury#closetgoals #dreamcloset">
+            <img src="https://i.ytimg.com/vi/UlBvEaHwC1w/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </button>
+        </div>
+        <p class="eyebrow">Short</p>
+        <h3>World Cabinets and Closets🌎 #closet #fashion #luxurycloset #luxury#closetgoals #dreamcloset</h3>
+        <a href="https://www.youtube.com/shorts/UlBvEaHwC1w" target="_blank" rel="noopener">Watch on YouTube</a>
+      </article>
+      <article class="video-card">
+        <div class="video-preview">
+          <button class="video-play" type="button" data-video="r5wPBsU_LVE" aria-label="Play Custom Walk-in Closet designed by World Cabinets and Closets 🌎 #closet #walkincloset#luxury">
+            <img src="https://i.ytimg.com/vi/r5wPBsU_LVE/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </button>
+        </div>
+        <p class="eyebrow">Short</p>
+        <h3>Custom Walk-in Closet designed by World Cabinets and Closets 🌎 #closet #walkincloset#luxury</h3>
+        <a href="https://www.youtube.com/shorts/r5wPBsU_LVE" target="_blank" rel="noopener">Watch on YouTube</a>
+      </article>
+      <article class="video-card">
+        <div class="video-preview">
+          <button class="video-play" type="button" data-video="n98pr00H728" aria-label="Play World Cabinets and Closets 🌎 #closet #luxurycloset #luxury #reach-incloset">
+            <img src="https://i.ytimg.com/vi/n98pr00H728/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </button>
+        </div>
+        <p class="eyebrow">Short</p>
+        <h3>World Cabinets and Closets 🌎 #closet #luxurycloset #luxury #reach-incloset</h3>
+        <a href="https://www.youtube.com/shorts/n98pr00H728" target="_blank" rel="noopener">Watch on YouTube</a>
+      </article>
+      <article class="video-card">
+        <div class="video-preview">
+          <button class="video-play" type="button" data-video="WKOiuTEXHXk" aria-label="Play Reach-in closet design. #closet #fashion #luxurycloset #luxury #worldcabinetsandclosets">
+            <img src="https://i.ytimg.com/vi/WKOiuTEXHXk/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </button>
+        </div>
+        <p class="eyebrow">Short</p>
+        <h3>Reach-in closet design. #closet #fashion #luxurycloset #luxury #worldcabinetsandclosets</h3>
+        <a href="https://www.youtube.com/shorts/WKOiuTEXHXk" target="_blank" rel="noopener">Watch on YouTube</a>
+      </article>
+      <article class="video-card">
+        <div class="video-preview">
+          <button class="video-play" type="button" data-video="7edEypnSIxk" aria-label="Play Barber shop renovation 👍">
+            <img src="https://i.ytimg.com/vi/7edEypnSIxk/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </button>
+        </div>
+        <p class="eyebrow">Short</p>
+        <h3>Barber shop renovation 👍</h3>
+        <a href="https://www.youtube.com/shorts/7edEypnSIxk" target="_blank" rel="noopener">Watch on YouTube</a>
+      </article>
+      <article class="video-card">
+        <div class="video-preview">
+          <button class="video-play" type="button" data-video="GQPjtmjJ0F8" aria-label="Play Everything taste better with the new kitchen 👌 #kitchen #kitchenremodel#kitchenrenovations">
+            <img src="https://i.ytimg.com/vi/GQPjtmjJ0F8/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </button>
+        </div>
+        <p class="eyebrow">Short</p>
+        <h3>Everything taste better with the new kitchen 👌 #kitchen #kitchenremodel#kitchenrenovations</h3>
+        <a href="https://www.youtube.com/shorts/GQPjtmjJ0F8" target="_blank" rel="noopener">Watch on YouTube</a>
+      </article>
+      <article class="video-card">
+        <div class="video-preview">
+          <button class="video-play" type="button" data-video="LNS0c6fJzb4" aria-label="Play Kitchen is heart of the home 🏡 #kitchen#kitchenremodel#renovation#design">
+            <img src="https://i.ytimg.com/vi/LNS0c6fJzb4/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </button>
+        </div>
+        <p class="eyebrow">Short</p>
+        <h3>Kitchen is heart of the home 🏡 #kitchen#kitchenremodel#renovation#design</h3>
+        <a href="https://www.youtube.com/shorts/LNS0c6fJzb4" target="_blank" rel="noopener">Watch on YouTube</a>
+      </article>
+      <article class="video-card">
+        <div class="video-preview">
+          <button class="video-play" type="button" data-video="B0vaIXSkzac" aria-label="Play Imagine a morning when you walk into your closet and  you find everything neatly beautiful 💕">
+            <img src="https://i.ytimg.com/vi/B0vaIXSkzac/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </button>
+        </div>
+        <p class="eyebrow">Short</p>
+        <h3>Imagine a morning when you walk into your closet and  you find everything neatly beautiful 💕</h3>
+        <a href="https://www.youtube.com/shorts/B0vaIXSkzac" target="_blank" rel="noopener">Watch on YouTube</a>
+      </article>
+      <article class="video-card">
+        <div class="video-preview">
+          <button class="video-play" type="button" data-video="I9llNU2HzX0" aria-label="Play #closet #fashion #luxurycloset #channel #luxury #style #closetgoals #interiordesign">
+            <img src="https://i.ytimg.com/vi/I9llNU2HzX0/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </button>
+        </div>
+        <p class="eyebrow">Short</p>
+        <h3>#closet #fashion #luxurycloset #channel #luxury #style #closetgoals #interiordesign</h3>
+        <a href="https://www.youtube.com/shorts/I9llNU2HzX0" target="_blank" rel="noopener">Watch on YouTube</a>
+      </article>
+      <article class="video-card">
+        <div class="video-preview">
+          <button class="video-play" type="button" data-video="iZzPWg4ecvQ" aria-label="Play World Cabinets &amp;Closets 🌎#channel #closet #luxurycloset #luxury #dreamcloset#luxury#luxurycloset">
+            <img src="https://i.ytimg.com/vi/iZzPWg4ecvQ/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <span class="video-play-icon" aria-hidden="true">▶</span>
+          </button>
+        </div>
+        <p class="eyebrow">Short</p>
+        <h3>World Cabinets &amp;Closets 🌎#channel #closet #luxurycloset #luxury #dreamcloset#luxury#luxurycloset</h3>
+        <a href="https://www.youtube.com/shorts/iZzPWg4ecvQ" target="_blank" rel="noopener">Watch on YouTube</a>
       </article>
     </div>
   </div>
@@ -291,5 +767,6 @@
 </footer>
 
 <script src="assets/js/main.js"></script>
+<script src="assets/js/videos.js" defer></script>
 </body>
 </html>
